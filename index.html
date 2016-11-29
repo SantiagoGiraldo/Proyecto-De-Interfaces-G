@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Framework Proyecto Final</title>
+	<!--Este es el diseño responsive designe se agrega para que el contenido se redusca hasta el tamaño de un movil-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--incluir los estilos-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!--incluir el normalize-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!--iconos sacados de fontastic-->
+	<link href="https://file.myfontastic.com/F7YkD7k5T7DYJUboNyZqae/icons.css" rel="stylesheet">
+	   
+</head>
+<body>
+<!--Inicio del encabezado con el titulo y el menu-->
+<header class="header">
+		<div class="contenedor">
+		<!--Con este h1 saldria el titulo principal de la pagina-->
+		<h1 class="logo">Juegos Online.Com</h1>
+		<!--Con la clase icon-menu se toma el contenido del menu superior-->
+		<span class="icon-menu" id="btn-menu"></span>  
+		<nav class="nav" id="nav">
+	<ul class="menu">
+	<!--Aqui se agregan los "li" o campos para el menu el menu_lin tiene un select que nos indica donde estamos actualmente en la pagina-->
+	<li class="menu__item"><a class="menu__link select" href="">Inicio</a></li>
+	<li class="menu__item"><a class="menu__link"  href="">Juegos</a></li>
+	<li class="menu__item"><a class="menu__link"  href="">Contacto</a></li>
+	<!--los li estan dentro de un ul--> 	 
+	</ul>
+	</nav>
+</div>
+</header>
+<!--Fin del menu desplegable-->
+<div class="banner">
+<!--Aqui con la clase "img" se agrega la imagen principal superior obtenida de la nube-->
+	<img src="img/dota.jpg" alt="" class="banner_img">
+		<div class="container">
+		<!--Este h2 esta contenido en la clase "banner_titulo"en un tamaño mas reducido,separando la parte superior con la parte secundaria de nuestra pagina -->		
+		<h2 class="banner_titulo">Los Mejores Juegos A Tu Alcance</h2>
+		</div>
+	</div>
+	<!--Fin de la parte superior-->
+<main class="main">
+<!--Inicio de la parte secundaria con nuestros productos-->
+<div class="contenedor">
+<!--con este div se separa la parte principal y inicia la secundaria-->
+	<section class="info">
+		<article class="info_columna">
+		<h2>Nuestros Juegos</h2>
+		<!--con este h2 como en la seccion anterior se le agrega un tamaño a un subtitulo-->
+		<p>Un ID universal de Juegos Online que te dará acceso exclusivo a nuestro contenido<br>Ya están aquí los paquetes de diciembre, por tiempo limitado.</p>
+		<!--con "p" se deben agregar los textos para ser modificados en la pagina estilos-->
+			<h3 class="info_titulo">League Of Legends</h3>
+			<!--agrege un h3 para los titulos de los juegos y darles un color diferenciador-->
+			<img src="img/lol.jpg" alt="" class="info_img">
+			<!--como en la seccion anterior usar un img para la foto-->
+			<p class="info_txt">Muchos factores entran en juego para triunfar en los Campos de la Justicia. En la guía del nuevo jugador, aprenderás a controlar a tu campeón, conocerás las estructuras que te encontrarás en el campo de batalla y disfrutarás del tutorial. Cuando estés preparado, podrás incluso participar en tu primera partida competitiva de League of Legends </p>
+			<!--con "p" se deben agregar los textos para ser modificados en la pagina estilos-->
+		</article>
+	<article class="info_columna">
+	<!--aqui incia la segunda seccion de los productos-->
+			<h3 class="info_titulo">Total War</h3>
+			<!--agrege un h3 para los titulos de los juegos y darles un color diferenciador-->
+			<img src="img/war.jpg" alt="" class="info_img">
+			<!--como en la seccion anterior usar un img para la foto-->
+			<p class="info_txt">Total War: Warhammer es un videojuego de estrategia desarrollado por The Creative Assembly y distribuido por Sega. Está basado en el juego de mesa Warhammer Fantasy Battle. Salió a la venta el 24 de mayo de 2016</p>
+			<!--con "p" se deben agregar los textos para ser modificados en la pagina estilos-->
+		</article>
+	</section>
+</section>
+</div>
+</main>
+<section class="contacto">
+<!--inicia el pie de pagina o footer la parte final de la pagina-->
+<footer class="footer">
+	<div class="contacto_columna">
+		<div class="contacto_descripcion">
+		<h3 class="contacto_titulo">Contactanos</h3>
+		<p class="copy">CopyRight-2016-Todos Los Derechos Reservados</p>
+</div>
+</div>
+</footer>
+<!--aqui finaliza el footer y procedi a agregar los scripts de la carpeta js-->
+<script src="js/menu.js"></script>
+<script src="js/jquery.min.js"></script>
+</body>
+</html>

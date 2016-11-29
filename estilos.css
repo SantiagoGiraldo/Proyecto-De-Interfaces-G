@@ -1,0 +1,165 @@
+/*Estos links son los estilos de letra para los titulos tanto el principal como para los secundarios*/
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+/*estos estilos se obtienen de google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+*{
+	box-sizing:border-box;/*toda la pagina queda en un modelo de caja*/
+}
+
+img{
+	display:block;
+	max-width:100%;
+/*con esto se modifica el tamaño de las imagenes*/
+}
+
+p{
+	text-align:center;
+	font-family:arial;
+	color:white;
+}
+
+body{
+margin:0;
+font-family: 'Roboto Condensed', sans-serif;
+background-color:white;
+/*estilos generales de nuestra framework del body p y los h1,h2..etc */
+}
+
+
+h1,h2,h4,h5,h6{
+font-family: 'Bungee Inline', cursive;
+letter-spacing:1.5px;
+text-align:center;
+color:#d79922;
+/*Letra de los titulos centrados con espacio en cada letra y su estilo */
+}
+h3{
+	/*el titulo h3 queda centrado con negrita tipo de letra y el color*/
+	font-weight:bold;
+	text-align:center;
+	font-family:arial;
+	color:#b2d9db;
+}
+
+
+/*Estilos del header o encabezado*/
+.header{
+	height:50px;
+}
+.header .contenedor{
+	/*aqui separa el titulo con el menu y los deja en frente*/
+display:flex;
+justify-content:space-between;
+}
+
+.logo, .icon-menu{
+margin:5px;
+color:#d79922;
+/*se le da color al titulo principal */
+}
+
+
+.icon-menu{
+/*el icono del menu tendra un alto un ancho un color de fondo que el borde sea "radius" su color sera blanco y al fijarlo saldra el puntero*/	
+display:block;
+width:40px;
+height:40px;
+font-size:30px;
+background:#f6c653;
+text-align:center;
+line-height:50px;
+border-radius:5px;
+margin-left:auto;
+color:white;
+cursor:pointer;
+}
+
+
+/*Estilos del menu desplegable*/
+.nav{
+/*en este apartado el menu estaria 100% a la izquierda y al oprimirlo volveria a la posicion original y demora 4segundos*/
+	position:absolute;
+	top:100px;
+	left:-100%;
+	width:100%;
+	transition:all 0.4s;
+
+	
+}
+.menu{
+	/*no le damos un estilo de lista sin margen ni un padding*/
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.menu__link{
+	/*se le da color al menu la letra sin decoracion estara en bloque y ocupara unos 15 pixeles */
+	display:block;
+	padding:15px;
+	color:white;
+	background:#f6c653;
+	text-decoration:none;
+}
+/*aqui se le da al menu al ser seleccionado un fondo blanco y la letra negra*/
+.menu__link:hover,.select{
+	background:white;
+	color:black;
+}
+/*como el menu esta oculto con esta funcion se muestra al darle click*/
+.mostrar{
+	left:0;
+}
+
+/*Estilos del Banner o parte superior debajo del menu*/
+.banner{
+	/*aqui la imagen principal queda detras del menu y el titulo principal*/
+	margin-top:-60px;
+	position:relative;
+	z-index:-1000;
+	margin-bottom:20px;
+
+}
+/*este es el titulo secundario con su color y centrado*/
+.banner_titulo{
+	text-align:center;
+	font-weight:bold;
+	color:#d79922;
+
+}
+
+/*Estilos de las columnas secundarias*/
+.info_columna{
+	/*se le da un color de fondo a las columnas lo que ocupan */
+	background-color:black;
+	color:#b2d9db;
+	padding:15px;
+	margin-bottom:50px;
+}
+/*Parte del footer o pie de pagina*/
+.contacto_columna{
+position:relative;
+}
+.contacto_descripcion{
+/*con todas las secciones de contacto hacemos la parte inferior gris y se gradua su contraste*/
+position:absolute;
+top:0;
+left:0;
+background:rgba(0,0,0,0.5);
+width:100%;
+}
+.contacto_titulo{
+font-size:30px;
+margin:5px;
+
+}
+.footer{
+/*se centra la letra y ocupa unos 5 pixeles*/
+	padding:5px;
+	text-align:center;
+}
+.copy{
+/*con esto le damos color al copyright y con negrita*/
+	font-size:bold;
+	color:black;
+}
